@@ -1,0 +1,20 @@
+{
+  "Resources": {
+    "FirstEc2Instance88": {
+      "Type":"AWS::EC2::Instance",
+      "Properties": {
+        "ImageId":"ami-08895422b5f3aa64a",
+        "InstanceType": "t2.micro",
+        "KeyName": "california",
+        "SecurityGroupIds": ["sg-069d07876c723feb1"],
+        "Tags": [
+         {
+          "Key": "Name",
+          "Value": "Test-Server-New"
+         }
+        ]
+
+      }
+    }
+  }
+}
