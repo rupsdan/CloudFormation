@@ -1,0 +1,21 @@
+{
+  "Resources": {
+    "FirstEc2Instance88": {
+      "Type":"AWS::EC2::Instance",
+      "Properties": {
+        "ImageId":"ami-0af25d0df86db00c1",
+        "InstanceType": "t2.micro",
+        "KeyName": "mumbai",
+        "AvailabilityZone": "ap-south-1b",
+        "SecurityGroupIds": ["sg-0039cd7e100f621ff"],
+        "Tags": [
+         {
+          "Key": "Name",
+          "Value": "Test-Server-New-mumbai"
+         }
+        ]
+
+      }
+    }
+  }
+}
